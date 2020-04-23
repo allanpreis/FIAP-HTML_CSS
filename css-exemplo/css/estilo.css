@@ -1,0 +1,65 @@
+#container {
+    background-color: #1f222b;
+    margin:0 15% 0 15%;
+    font-family: "Times New Roman", serif;
+    color: #ffffff;
+    height: 800px;
+}
+a{
+  text-decoration: none;
+}
+
+#imgJava{
+	width: 15%;
+	height: 15%;
+}
+
+#imgPython{
+	width: 45%;
+	height: 45%;
+}
+
+#imgRuby{
+	width: 20%;
+	height: 20%;
+}
+
+#imgCsharp{
+	width: 15%;
+	height: 15%;
+}
+
+.img-box{
+  
+}
+
+.tit-pag{
+  text-align: center;
+  font-family: 'Tahoma',serif;
+}
+
+.menu-box{
+  padding: 0.1% 0 0.1% 0;
+  background-color: #262423;
+  border-radius: 10px;
+}
+
+.menu-horiz li{
+  display: inline;
+  padding: 0 9% 0 9%;
+}
+.menu-horiz li a{
+  color: #fff;
+  font-family: 'Tahoma', serif;
+  font-size: 20px;
+  padding: 1%;
+}
+.menu-horiz li a:LINK{
+  color: #fff;
+}
+.menu-horiz li a:VISITED{
+  color: #fff;
+}
+.menu-horiz li a:HOVER{
+  background-color: #50786d;
+}
