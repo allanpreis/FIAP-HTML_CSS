@@ -1,0 +1,80 @@
+<!Doctype html>
+  <html lang="pt-br" dir="ltr">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1">
+     <title>PAGINA</title>
+
+     <style media="screen">
+        #div1{
+            font-size: 2em;
+            font-family: Consolas, sans-serif;
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+
+        #frm01 input,select{
+          border: 2px solid #cccccc;
+          border-radius: 5px;
+          font-size: 1em;
+          font-family: Consolas, sans-serif;
+          display: block;
+        }
+
+        #frm01 select:HOVER{
+          background-color: #cccccc;
+        }
+        #frm01 input:HOVER{
+          background-color: #cccccc;
+        }
+
+        #frm01 input[type=submit]{
+          margin-top: 30px;
+          background-color: #505856;
+          color: #fff;
+        }
+
+
+
+     </style>
+
+   </head>
+   <body>
+     <div id="container">
+
+       <div id="div1">
+         <form id="frm01" action="exemplo1.html" method="get" onsubmit="alert('NOME : ' +idNm.value+'\n'+'SOBRENOME :'+idSnm.value+'\n'+'RG : '+idRg.value+'\n'+'ESTADO : '+cpEstado.value)">
+            <fieldset>
+              <legend>CADASTRO</legend>
+
+              <div>
+                <label for="idNm">Nome</label>
+                <input type="text" id="idNm" name="cpNm" placeholder="Digite seu nome." required="required">
+              </div>
+              <div>
+                <label for="idSnm">Sobrenome</label>
+                <input type="text" id="idSnm" name="cpSnm" placeholder="Digite seu sobrenome." required="required">
+              </div>
+              <div>
+                <label for="idRg">RG</label>
+                <input type="text" id="idRg" name="cpRg" placeholder="Digite seu RG." required="required" pattern="[0-9]{2}\.[0-9]{3}\.[0-9]{3}-[0-9A-Za-z]{1}">
+              </div>
+              <div>
+                <label for="idEstado">Estado</label>
+                <select id="idEstado" name="cpEstado">
+                  <option value="sp">SÃO PAULO</option>
+                  <option value="rj">RIO DE JANEIRO</option>
+                  <option value="pr">PARANÁ</option>
+                  <option value="sc">STA CATARINA</option>
+                </select>
+              </div>
+              <div>
+                <input type="submit" value="PROCESSAR">
+              </div>
+            </fieldset>
+         </form>
+       </div>
+
+     </div>
+   </body>
+</html>
