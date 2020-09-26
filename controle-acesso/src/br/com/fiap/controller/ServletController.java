@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class ServletController
  */
-@WebServlet(urlPatterns = {"/index.php", "/resultado.jsp", "/validacao"})
+@WebServlet( urlPatterns={"/validacao","/index.php"})
 public class ServletController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -26,19 +26,31 @@ public class ServletController extends HttpServlet {
 	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 
+		//Teste de Request
+		System.out.println("Olá Mundo!");
 		
-		String emailUsuario = "";
-		String senhaUsuario = "";
-		
-		emailUsuario = request.getParameter("txt-user");
-		senhaUsuario = request.getParameter("txt-pass");
-		
-		System.out.println("Email do usuário: " + emailUsuario);
-		System.out.println("Senha do usuário: " + senhaUsuario);
-		
-		response.sendRedirect("resultado.html");
-		
+		/***
+		 * Bloco de Processamento
+		 */
+			String nomeUsuario  = "";
+			String senhaUsuario = "";
+			
+			//Receber os atributos do Form que estao no
+			// request e armazenar nas variáveis.
+			nomeUsuario = request.getParameter("txt-user");
+			senhaUsuario = request.getParameter("txt-pass");
+			
+			//Imprimindo os dados que chegaram do request!
+			System.out.println("Nome  do usuário : " + nomeUsuario);
+			System.out.println("Senha do usuário : " + senhaUsuario);
+			
+		/***
+		 * Bloco de Processamento
+		 */
+
+			//Criando um redirecionamento utilizando o response
+			//utilize o método sendRedirect(caminho ou URI de destino)
+			response.sendRedirect("login.html");
 	}
 }

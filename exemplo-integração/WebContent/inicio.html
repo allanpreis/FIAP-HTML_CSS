@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>INICIO</title>
+</head>
+<body>
+
+	<h1>Página de origem dos Requests para a SERVLET.</h1>
+
+	<div>
+		<h2>REQUEST-POST</h2>
+		<form action="exemplo" method="POST">
+			<fieldset>
+				<legend>LOGIN</legend>
+				<div>
+					<div>
+						<label>Nome de usuário</label>
+					</div>
+					<div>
+						<input type="text" name="nmUser">
+					</div>
+				</div>
+				<div>
+					<div>
+						<label>Senha</label>
+					</div>
+					<div>
+						<input type="password" name="passUser">
+					</div>
+				</div>
+				<div>
+					<button type="submit">LOGIN</button>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+
+	<div>
+		<h2>REQUEST-GET</h2>
+		<div>
+			<a href="exemplo?nome=Allan&profissao=aluno">LINK-TO-SERVLET</a>
+		</div>
+	</div>
+
+
+</body>
+</html>
